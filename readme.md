@@ -10,7 +10,7 @@ Machine learning models come from [this project](https://github.com/HaomingJue/H
 ## API
 API URL Pattern \
 <code>[get] <deploy_url>/ml/<model_name></code> \
-If you run the project locally, the default url should be http://localhost:8080
+If you run the project locally, the default url should be http://localhost:8000
 
 ### Valid <model_name>
 DecisionTree \
@@ -25,12 +25,12 @@ SVMRBF
 
 ### Body of requests
 parameter **input:** a 10*1 array representing lists of data input by user \
-example request body: \
-<code>
-{
-    "input": [8.0, 1.0, 4.0, 355.0, 99.0, 1.0, 2.0, 2.0, 1, 2]
-}
-</code>
+example request body: 
+
+    {
+        "input": [8.0, 1.0, 4.0, 355.0, 99.0, 1.0, 2.0, 2.0, 1, 2]
+    }
+
 
 ### Response
 a binary value indicating having heart disease risk or not.

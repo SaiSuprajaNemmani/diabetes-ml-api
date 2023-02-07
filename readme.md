@@ -1,5 +1,7 @@
 # Herat Disease Machine Learning API
-This project is developed with [Django Rest Framework](https://www.django-rest-framework.org/)
+This project is developed with [Django Rest Framework](https://www.django-rest-framework.org/) \
+Machine learning models come from [this project](https://github.com/HaomingJue/Heart-Disease-Detection)  
+
 ### To install the dpendencies
 <code>pip install -r requirements.txt</code>
 ### To start the server locally (localhost:8000)

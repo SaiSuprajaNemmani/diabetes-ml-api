@@ -22,6 +22,19 @@ SVMLinear \
 SVMRBF 
 
 **Note:** The <model_name> parameter should be consistent with one of the models in saved_models directory
+
+### Body of requests
+parameter **input:** a 10*1 array representing lists of data input by user \
+example request body: \
+<code>
+{
+    "input": [8.0, 1.0, 4.0, 355.0, 99.0, 1.0, 2.0, 2.0, 1, 2]
+}
+</code>
+
+### Response
+a binary value indicating having heart disease risk or not.
+
 ### How to update the trained models
 Replace joblib model files in <code>saved_models</code> directory
 

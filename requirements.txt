@@ -1,0 +1,14 @@
+﻿asgiref==3.5.2
+Django==4.1.2
+django-cors-headers==3.11.0
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.0.0
+PyJWT==2.3.0
+pytz==2022.5
+sqlparse==0.4.3
+tzdata==2022.5
+mysqlclient==2.1.1
+scikit-learn==0.24.2
+joblib==1.1.0
+django-rest-auth
+drf-yasg

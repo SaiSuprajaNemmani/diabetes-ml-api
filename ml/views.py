@@ -10,11 +10,8 @@ base_dir = os.path.dirname(__file__)
 # Create your views here.
 @api_view(['GET'])
 def predict(request, model_name):
-    test_data = [[8.0, 1.0, 4.0, 355.0, 99.0, 1.0, 2.0, 2.0, 1, 2]]
-    print(len(test_data[0]))
-    data = request.data["input"]
-    print(data)
+    data = [request.data["input"]]
 
     load_model = joblib.load(open(base_dir + "/saved_models/" + model_name + ".joblib", 'rb'))
-    y_pred = load_model.predict(test_data)
+    y_pred = load_model.predict(data)
     return JsonResponse(y_pred[0], safe=False)

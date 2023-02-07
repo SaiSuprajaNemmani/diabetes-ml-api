@@ -10,7 +10,7 @@ Machine learning models come from [this project](https://github.com/HaomingJue/H
 ## API
 API URL Pattern \
 <code>[get] <deploy_url>/ml/<model_name></code> \
-If you run the project locally, the default url should be http://localhost:8080
+If you run the project locally, the default url should be http://localhost:8000
 
 ### Valid <model_name>
 DecisionTree \

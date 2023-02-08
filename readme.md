@@ -1,4 +1,4 @@
-# Herat Disease Machine Learning API
+# Heart Disease Machine Learning API
 This project is developed with [Django Rest Framework](https://www.django-rest-framework.org/) \
 Machine learning models come from [this project](https://github.com/HaomingJue/Heart-Disease-Detection)  
 

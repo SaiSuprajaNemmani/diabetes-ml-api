@@ -12,6 +12,10 @@ API URL Pattern \
 <code>[get] <deploy_url>/ml/<model_name></code> \
 If you run the project locally, the default url should be http://localhost:8000
 
+**Current Deploy Link:** https://mlmodel.herokuapp.com/ \
+eg: To apply ml prediction with GBT model, use <code>Get</code> method to call <code>https://mlmodel.herokuapp.com/ml/GBT</code> \
+Please  include the Request Body following below guidance.
+
 ### Valid <model_name>
 DecisionTree \
 GBT \
@@ -23,7 +27,7 @@ SVMRBF
 
 **Note:** The <model_name> parameter should be consistent with one of the models in saved_models directory
 
-### Body of requests
+### Request Body
 parameter **input:** a 10*1 array representing lists of data input by user \
 example request body: 
 

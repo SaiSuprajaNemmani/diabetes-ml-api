@@ -8,8 +8,10 @@ Machine learning models come from [this project](https://github.com/HaomingJue/H
 <code>python manage.py runserver</code>
 
 ## API
+**IMPORTANT!!!** \
+The HTTP Method is changed to Post. Get method ususally encounters bugs in request body.
 API URL Pattern \
-<code>[get] <deploy_url>/ml/<model_name></code> \
+<code>[post] <deploy_url>/ml/<model_name></code> \
 If you run the project locally, the default url should be http://localhost:8000
 
 **Current Deploy Link:** https://mlmodel.herokuapp.com/ \

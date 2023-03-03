@@ -18,4 +18,5 @@ from . import views
 
 urlpatterns = [
     path('ml/<str:model_name>', views.predict),
+    path('ml/post/', views.ml_post_view, name='ml_post'),
 ]

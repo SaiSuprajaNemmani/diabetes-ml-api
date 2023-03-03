@@ -19,3 +19,14 @@ def predict(request, model_name):
     load_model = joblib.load(open(base_dir + "/saved_models/" + model_name + ".joblib", 'rb'))
     y_pred = load_model.predict(data)
     return JsonResponse(y_pred[0], safe=False)
+
+#creating view for post API
+def ml_post_view(request):
+    if request.method == 'POST':
+        data = request.POST
+        # Do something with the post data
+        response_data = {'status': 'success'}
+        return JsonResponse(response_data)
+    else:
+        response_data = {'status': 'error'}
+        return JsonResponse(response_data)

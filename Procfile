@@ -1,1 +1,1 @@
-web gunicorn heartdiseaseapi.wsgi:application --log-file -
+web gunicorn diabetesapi.wsgi:application --log-file -

@@ -18,6 +18,7 @@ def predict(request, model_name):
 
     load_model = joblib.load(open(base_dir + "/saved_models/" + model_name + ".joblib", 'rb'))
     y_pred = load_model.predict(data)
+    print (y_pred)
     return JsonResponse(y_pred[0], safe=False)
 
 #creating view for post API

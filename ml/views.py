@@ -20,14 +20,3 @@ def predict(request, model_name):
     y_pred = load_model.predict(data)
     print (y_pred)
     return JsonResponse(y_pred[0], safe=False)
-
-#creating view for post API
-def ml_post_view(request):
-    if request.method == 'POST':
-        data = request.POST
-        # Do something with the post data
-        response_data = {'status': 'success'}
-        return JsonResponse(response_data)
-    else:
-        response_data = {'status': 'error'}
-        return JsonResponse(response_data)
